@@ -1,9 +1,13 @@
 {
 	"name": "knex-preview",
 	"displayName": "Knex Preview",
-	"publisher": "gerrymi",
 	"description": "Displays a preview of the query the highlighted knex code will generate.",
 	"version": "0.0.1",
+	"publisher": "gerrymi",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/gerrymi/knex-preview"
+  },
 	"engines": {
 		"vscode": "^1.57.0"
 	},

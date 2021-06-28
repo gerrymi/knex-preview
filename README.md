@@ -9,16 +9,6 @@ Highlight your knex code, and run Knex Preview for your desired sql dialect.
 
 ## Requirements
 
-## Extension Settings
-
 ## Known Issues
-
-## Release Notes
-
-### 0.0.1
-
-Knex Preview Beta
-
------------------------------------------------------------------------------------------------------------
 
 **Enjoy!**

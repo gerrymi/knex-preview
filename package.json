@@ -2,7 +2,7 @@
 	"name": "knex-preview",
 	"displayName": "Knex Preview",
 	"description": "Displays a preview of the query the highlighted knex code will generate.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "gerrymi",
 	"repository": {
     "type": "git",

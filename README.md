@@ -5,7 +5,7 @@ Knex Preview allows you to preview the query knex generates.
 
 Highlight your knex code, and run Knex Preview for your desired sql dialect.
 
-\!\[Usage\]\(images/knex-preview.gif\)
+![Usage](/images/knex-preview.gif)
 
 ## Requirements
 

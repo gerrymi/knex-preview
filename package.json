@@ -1,0 +1,75 @@
+{
+	"name": "knex-preview",
+	"displayName": "Knex Preview",
+	"publisher": "gerrymi",
+	"description": "Displays a preview of the query the highlighted knex code will generate.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:knex-preview.generate-mysql",
+		"onCommand:knex-preview.generate-mysql2",
+		"onCommand:knex-preview.generate-oracledb",
+		"onCommand:knex-preview.generate-postgres",
+		"onCommand:knex-preview.generate-redshift",
+		"onCommand:knex-preview.generate-sqlite3"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "knex-preview.generate-mysql",
+				"title": "Knex Preview: Mysql"
+			},
+			{
+				"command": "knex-preview.generate-mysql2",
+				"title": "Knex Preview: Mysql2"
+			},
+			{
+				"command": "knex-preview.generate-oracledb",
+				"title": "Knex Preview: Oracledb"
+			},
+			{
+				"command": "knex-preview.generate-postgres",
+				"title": "Knex Preview: Postgres"
+			},
+			{
+				"command": "knex-preview.generate-redshift",
+				"title": "Knex Preview: Redshift"
+			},
+			{
+				"command": "knex-preview.generate-sqlite3",
+				"title": "Knex Preview: Sqlite3"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.57.0",
+		"@typescript-eslint/eslint-plugin": "^4.26.0",
+		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"dependencies": {
+		"knex": "^0.95.6",
+		"sql-formatter": "^4.0.2"
+	}
+}
